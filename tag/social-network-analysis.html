@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="http://carnby.github.io/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Eduardo Graells-Garrido">
+  <meta name="description" content="Posts and writings by Eduardo Graells-Garrido">
+
+  <link href="http://carnby.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="@carnby Full Atom Feed" />
+
+
+  <title>
+Tag: social network analysis  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-383793-9']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="http://carnby.github.io">
+        <img src="images/avatar.jpg" alt="logo">
+      </a>
+      <h2><a href="http://carnby.github.io">@carnby</a></h2>
+      <p>Portfolio of Eduardo Graells-Garrido, PhD student at Universitat Pompeu Fabra in Barcelona (but living in Santiago, Chile) and intern at Yahoo Labs. Married. Python and d3.js enthusiast. Always grateful of learning from and working with others. Reader of Yukio Mishima, Roberto Bolaño and Hugo Pratt.</p>
+      <ul>
+        <li><a href="https://twitter.com/carnby" target="_blank">@twitter</a></li>
+        <li><a href="http://github.com/Carnby" target="_blank">@github</a></li>
+        <li><a href="http://cl.linkedin.com/pub/eduardo-graells-garrido/9b/b33/599" target="_blank">@linkedin</a></li>
+        <li><a href="http://labs.yahoo.com/author/egraells/" target="_blank">@yahoolabs</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+<p>Tag: social network analysis
+</p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/data-portraits.html">Data Portraits</a> 
+ &ndash; <small>
+      visualization,       social network analysis,       filter bubble      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+    <p>This is the second key project of my doctoral thesis. It's a joint work with my co-advisor <a href="http://www.dcs.gla.ac.uk/~mounia/">Mounia Lalmas</a> and <a href="http://researchswinger.org/">Daniele Quercia</a>. Likewise the Virtual Ornithology project, it's about user behavior in Twitter. In particular, we want to find out <em>how to connect people with opposing views in controversial and sensitive issues</em> by using <em>playful information visualizations</em> like this one:</p>
+<p><img src="images/visualizations-2013-data-portraits.png" width="600" /></p>
+<p>There are two behavioral bias related to this research project: <em><a href="https://en.wikipedia.org/wiki/Homophily">homophily</a></em> and <em><a href="https://en.wikipedia.org/wiki/Selective_exposure_theory">selective exposure</a></em>. Homophily refers to connecting and having relationships with people similar to us, while selective exposure is the act of preferring to read information that reafirms our beliefs, and discarding information that do not. Previous work has intented to solve this problem by, for instance, recommending people that is dissimilar (i.e., they have opposing views), or by displaying challenging information to user's beliefs. It hasn't worked because users do not value diversity.</p>
+<p>Our hypothesis is that this problem can be solved if, in addition to algorithms that perform people and content recommendation, we focus on <em>how to display those algorithm outcomes</em>. In particular, we propose that <em>playful information visualization techniques</em> will allow us to avoid the <a href="https://en.wikipedia.org/wiki/Cognitive_dissonance">cognitive dissonance</a> of confronting challenging information. As algorithm we consider a new algorithm that will recommend people that has opposing views in sensitive issues, but that is similar in non-sensitive issues (for instance, people who thinks differently on abortion but that likes the same movies).</p>
+<p>As a case study, we analyzed Twitter users from Chile in the context of the <em>abortion</em> issue (recall that there are two prominent stances: <em>#prochoice</em> and <em>#prolife</em>). First, we tested our idea that intermediary topics, those that are able to connect people with different viewpoints in abortion. It turns out that, indeed, they exist! We detected them by using <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">topic modelling</a> techniques. We presented these results at the <a href="http://scholar.google.es/citations?view_op=view_citation&amp;hl=en&amp;user=ltsTTI4AAAAJ&amp;citation_for_view=ltsTTI4AAAAJ:u9iWguZQMMsC">2014 International World Wide Web Conference held in Seoul</a>.</p>
+<p>We have evaluated our visualization in a pilot study with promising results. Results are reported in this <a href="http://arxiv.org/abs/1311.4658">pre-print</a> and covered by <a href="http://www.technologyreview.com/view/522111/how-to-burst-the-filter-bubble-that-protects-us-from-opposing-views/">MIT Technology Review</a>, <a href="http://radar.oreilly.com/2013/12/four-short-links-3-december-2013.html">O'Reilly Radar</a> and <a href="http://beta.slashdot.org/story/195089">slashdot</a>, among others. </p>
+<p>Currently we are working on a more complete and longitudinal user study, with an improved visualization design. Stay tuned!</p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/virtual-ornithology.html">Virtual Ornithology</a> 
+ &ndash; <small>
+      visualization,       social network analysis,       web mining,       twitter,       chile      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+    <p>This is one of the two key projects of my doctoral thesis (see its <a href="http://dl.acm.org/citation.cfm?id=2567958">proposal</a>). It is about understanding how a virtual population behaves in Twitter in the presence of systematic biases that may affect its behavior. In particular, we focus in the population of Chile, and study how people behave in the context of <em>geographical centralization</em>. Our main research question is: <em>how can we diminish the effect of centralization in the virtual population?</em></p>
+<p>As dataset we consider a set of tweets crawled during the municipal elections in Chile held in 2012. Here is a wordcloud of the most frequent terms in the collection, after a cleaning process:</p>
+<p><img src="images/visualizations-2014-virtual-ornithology.png" width="600" /></p>
+<p>We tested if the virtual population was representative of the physical population, and we found that it was spatially representative:</p>
+<p><img src="images/visualizations-2014-population-distributions.png" width="600" /></p>
+<p>What we did to test the existance of centralization was to build an <em>interaction graph</em> where locations interact between them based on how people mention, reply and retweet people from other locations. This is a visualization of that interaction graph (on the left is the <em>source location</em>; on the right, the <em>target location</em> of the interaction graph):</p>
+<p><img src="images/visualizations-2014-location-interactions.png" width="600" /></p>
+<p>Even though the population in Chile is imbalanced, the <em>observed</em> amount of interactions to <em>Santiago/Región Metropolitana</em> is higher than expected. To analyze this, we developed a methodology to define how centralized the virtual population is, and then we defined an algorithm to actually improve the situation. You can read more about it in our Hypertext 2014 paper (jointly presented with <a href="http://www.dcs.gla.ac.uk/~mounia/">Mounia Lalmas</a>) titled: <a href="http://scholar.google.es/citations?view_op=view_citation&amp;hl=es&amp;user=ltsTTI4AAAAJ&amp;citation_for_view=ltsTTI4AAAAJ:Tiz5es2fbqcC">Balancing Diversity to Counter-measure Geographical Centralization in Microblogging Platforms</a></p>
+<p>We have evaluated our algorithm in user studies and the results have been great. In addition, we are working on visualizations of the timelines generated by our algorithm, so expect more cool things to come!</p>
+<p>In this project, besides my advisors <a href="http://baeza.cl/">Ricardo Baeza-Yates</a> and <a href="http://www.dcs.gla.ac.uk/~mounia/">Mounia Lalmas</a>, I have been lucky to collaborate with <a href="http://barbara.cl">Bárbara Poblete</a> and to receive advice from <a href="http://researchswinger.org/">Daniele Quercia</a>.</p>
+<p><strong>Bonus:</strong> researching people and its behavior has allowed us to find interesting things which are not directly related to our main research question. For instance, consider the following image that shows user registrations on Chile (see the right figure):</p>
+<p><img src="images/web-mining-2014-chilean-users.png" width="600" /></p>
+<p>Notice the <em>peak</em>? It's the week of the <a href="http://en.wikipedia.org/wiki/2010_Chile_earthquake">27F Earthquake from 2010</a>, one of the largest earthquakes ever. I remember how Twitter was used to spread information and help others (unfortunately, other people misused it as well). </p>
+  </div>
+</article>
+
+    <footer>
+<div id="paginator">
+
+</div>
+    </footer>
+
+    <div id="ending_message">
+      <p>&copy; Eduardo Graells-Garrido. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/giulivo/pelican-svbhack" target="_blank">github</a>. .</p>
+    </div>
+  </main>
+</body>
+</html>
