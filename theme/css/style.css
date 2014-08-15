@@ -17,7 +17,7 @@ hr {
   border: none;
 }
 aside div#user_meta {
-  padding: 40px;
+  padding: 30px;
   text-align: center;
 }
 aside div#user_meta h2 {
@@ -46,7 +46,7 @@ aside div#user_meta ul li a {
   color: #999999;
 }
 main header {
-  padding: 40px;
+  padding: 30px;
   border-top: #eeeeee 1px solid;
   border-bottom: #eeeeee 1px solid;
 }
@@ -125,6 +125,13 @@ main div#ending_message {
   color: #999999;
   font-size: 10px;
 }
+
+main h1 small, main h2 small, main h3 small, main h4 small, main h5 small, main h6 small {
+    font-weight: normal;
+    font-size: 90%;
+    color: #777;
+}
+
 @media screen and (min-width: 1024px) {
   aside {
     width: 25%;
