@@ -70,7 +70,15 @@ Author: egraells  </title>
 <p>There are two behavioral bias related to this research project: <em><a href="https://en.wikipedia.org/wiki/Homophily">homophily</a></em> and <em><a href="https://en.wikipedia.org/wiki/Selective_exposure_theory">selective exposure</a></em>. Homophily refers to connecting and having relationships with people similar to us, while selective exposure is the act of preferring to read information that reafirms our beliefs, and discarding information that do not. Previous work has intented to solve this problem by, for instance, recommending people that is dissimilar (i.e., they have opposing views), or by displaying challenging information to user's beliefs. It hasn't worked because users do not value diversity.</p>
 <p>Our hypothesis is that this problem can be solved if, in addition to algorithms that perform people and content recommendation, we focus on <em>how to display those algorithm outcomes</em>. In particular, we propose that <em>playful information visualization techniques</em> will allow us to avoid the <a href="https://en.wikipedia.org/wiki/Cognitive_dissonance">cognitive dissonance</a> of confronting challenging information. As algorithm we consider a new algorithm that will recommend people that has opposing views in sensitive issues, but that is similar in non-sensitive issues (for instance, people who thinks differently on abortion but that likes the same movies).</p>
 <p>As a case study, we analyzed Twitter users from Chile in the context of the <em>abortion</em> issue (recall that there are two prominent stances: <em>#prochoice</em> and <em>#prolife</em>). First, we tested our idea that intermediary topics, those that are able to connect people with different viewpoints in abortion. It turns out that, indeed, they exist! We detected them by using <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">topic modelling</a> techniques. We presented these results at the <a href="http://scholar.google.es/citations?view_op=view_citation&amp;hl=en&amp;user=ltsTTI4AAAAJ&amp;citation_for_view=ltsTTI4AAAAJ:u9iWguZQMMsC">2014 International World Wide Web Conference held in Seoul</a>.</p>
-<p>We have evaluated our visualization in a pilot study with promising results. Results are reported in this <a href="http://arxiv.org/abs/1311.4658">pre-print</a> and covered by <a href="http://www.technologyreview.com/view/522111/how-to-burst-the-filter-bubble-that-protects-us-from-opposing-views/">MIT Technology Review</a>, <a href="http://radar.oreilly.com/2013/12/four-short-links-3-december-2013.html">O'Reilly Radar</a> and <a href="http://beta.slashdot.org/story/195089">slashdot</a>, among others. </p>
+<p>We have evaluated our visualization in a pilot study with promising results. Results are reported in this <a href="http://arxiv.org/abs/1311.4658">pre-print</a> and covered by:</p>
+<ul>
+<li><a href="http://www.technologyreview.com/view/522111/how-to-burst-the-filter-bubble-that-protects-us-from-opposing-views/">MIT Technology Review</a></li>
+<li><a href="http://radar.oreilly.com/2013/12/four-short-links-3-december-2013.html">O'Reilly Radar</a> </li>
+<li><a href="http://beta.slashdot.org/story/195089">slashdot</a></li>
+<li><a href="http://www.smithsonianmag.com/innovation/have-scientists-found-a-way-to-pop-the-filter-bubble-180948265/?no-ist">Smithsonian</a></li>
+<li><a href="http://www.wired.it/internet/regole/2013/12/13/come-usare-twitter-per-facilitare-il-confronto-tra-opposte-vedute-rete/">WIRED.it</a> (in italian)</li>
+<li><a href="http://www.ticbeat.com/socialmedia/somos-capaces-de-tolerar-opiniones-contrarias-la-nuestra-en-la-red-para-navidad/">TIC Beat Interview</a> (in spanish)</li>
+</ul>
 <p>Currently we are working on a more complete and longitudinal user study, with an improved visualization design. Stay tuned!</p>
   </div>
 </article>
@@ -122,11 +130,17 @@ But you can also build cooler stuff like this map of Santiago (playing with the 
 <p>What we did to test the existance of centralization was to build an <em>interaction graph</em> where locations interact between them based on how people mention, reply and retweet people from other locations. This is a visualization of that interaction graph (on the left is the <em>source location</em>; on the right, the <em>target location</em> of the interaction graph):</p>
 <p><img src="images/visualizations-2014-location-interactions.png" width="600" /></p>
 <p>Even though the population in Chile is imbalanced, the <em>observed</em> amount of interactions to <em>Santiago/Región Metropolitana</em> is higher than expected. To analyze this, we developed a methodology to define how centralized the virtual population is, and then we defined an algorithm to actually improve the situation. You can read more about it in our Hypertext 2014 paper (jointly presented with <a href="http://www.dcs.gla.ac.uk/~mounia/">Mounia Lalmas</a>) titled: <a href="http://scholar.google.es/citations?view_op=view_citation&amp;hl=es&amp;user=ltsTTI4AAAAJ&amp;citation_for_view=ltsTTI4AAAAJ:Tiz5es2fbqcC">Balancing Diversity to Counter-measure Geographical Centralization in Microblogging Platforms</a></p>
-<p>We have evaluated our algorithm in user studies and the results have been great. In addition, we are working on visualizations of the timelines generated by our algorithm, so expect more cool things to come!</p>
+<p>We have evaluated our algorithm in user studies and the results have been great. In addition, we are working on visualizations of the timelines generated by our algorithm, so expect more cool things to come, specially in <em>news</em> contexts. We want to make user interfaces that show news about the <em>whole</em> country, not just about Santiago :)</p>
 <p>In this project, besides my advisors <a href="http://baeza.cl/">Ricardo Baeza-Yates</a> and <a href="http://www.dcs.gla.ac.uk/~mounia/">Mounia Lalmas</a>, I have been lucky to collaborate with <a href="http://www.barbara.cl">Bárbara Poblete</a> and to receive feedback and advice from <a href="http://researchswinger.org/">Daniele Quercia</a> and <a href="https://upf.academia.edu/DiegoSaezTrumper">Diego Sáez-Trumper</a>.</p>
 <p><strong>Bonus:</strong> researching people and its behavior has allowed us to find interesting things which are not directly related to our main research question. For instance, consider the following image that shows user registrations on Chile (see the right figure):</p>
 <p><img src="images/web-mining-2014-chilean-users.png" width="600" /></p>
 <p>Notice the <em>peak</em>? It's the week of the <a href="http://en.wikipedia.org/wiki/2010_Chile_earthquake">27F Earthquake from 2010</a>, one of the largest earthquakes ever. I remember how Twitter was used to spread information and help others (unfortunately, other people misused it as well). </p>
+<p>Resources:</p>
+<ul>
+<li><a href="http://arxiv.org/abs/1307.0219">Ornitología Virtual</a> (paper in spanish to be published in the up-coming book <em>Socializar Conocimientos II: Observando a Chile desde la Distancia</em>).</li>
+<li><a href="http://arxiv.org/abs/1309.1785">#Santiago is not #Chile, or is it? A Model to Normalize Social Media Impact</a> Presented at the 1st Chilean Conference on Human Computer Interaction.</li>
+<li><a href="http://scholar.google.es/citations?view_op=view_citation&amp;hl=es&amp;user=ltsTTI4AAAAJ&amp;citation_for_view=ltsTTI4AAAAJ:Tiz5es2fbqcC">Balancing Diversity to Counter-measure Geographical Centralization in Microblogging Platforms</a>, to be presented at the Hypertext 2014 conference in Santiago, Chile.</li>
+</ul>
   </div>
 </article>
 <hr />
@@ -182,7 +196,7 @@ But you can also build cooler stuff like this map of Santiago (playing with the 
   <div class="article_text">
     <p><img src="images/visualizations-2012-identified.png" width="600" /></p>
 <p>In the summer of 2012 (in the northern hemisphere), we moved (my wife and me) from Barcelona to San Francisco to do an internship at Identified. Identified was a startup about gamification of job-seeking social networks, plus candidate sourcing for recruiters (it was acquired by Workday). I fully designed and implemented a search engine that used visualization widgets plus faceted search and filtering.
-My mentor through the internship was <a href="https://twitter.com/steelbot">James Fan</a>. Thanks for all your guidance, James! :)</p>
+My mentor through the internship was <a href="https://twitter.com/steelbot">James Fan</a>. Thanks for all your guidance, James!</p>
   </div>
 </article>
 <hr />
@@ -237,12 +251,134 @@ My mentor through the internship was <a href="https://twitter.com/steelbot">Jame
 <blockquote>Eduardo has an obvious awareness of data visualization fundamentals and best practices, and for the hackathon he developed a working prototype as well as two mockups of interactive visualizations meant to support data exploration and decision making. Like Team Ferioli’s entry the prototype incorporates economic indicators, displaying World Bank statistics alongside M-Lab data. The difference (aside from data source) is how comparisons are made. Instead of placing a bubble over each country on a single map, two map views are displayed in parallel, a user-selectable variable displayed on each. The different approaches have different strengths. The single map with bubbles makes discrepancies such as those described above stand out and be found more quickly, and doesn't require moving your eyes back and forth between maps. On the other hand, I find it easier to spot geographic trends within individual variables with Eduardo's approach, without the bubbles disrupting the visual flow. Also, props to Eduardo for choosing a colorblind-friendly colour palette. I don't know whether it was a conscious decision but it is an important consideration, often overlooked by visualization developers.</blockquote>
   </div>
 </article>
+<hr />
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/timebook.html">Timebook</a> 
+ &ndash; <small>
+      hackathon,       social networks,       dbpedia,       art,       museums      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+    <iframe src="http://player.vimeo.com/video/50050002?color=ff9933" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><img src="images/hackathon-2011-timebook.png" width=600 /></p>
+<p><em>Timebook</em> is a social network of historical figures built from Linked Open Data found on DBPedia, Europeana and WikiQuote. The main question we want to answer is: <em>what if social media existed before? can it be used to explore, learn and understand art movements and collections?</em> </p>
+<p>Joint work with <a href="http://grupoweb.upf.edu/~luca.chiarandini/">Luca Chiarandini</a>. Code available at <a href="https://github.com/carnby/timebook">github</a>. <strong>Winners of the Social Impact category</strong> at <em>Europeana's Hack4Europe hackathon</em> in Barcelona.</p>
+<p>Covered here:</p>
+<ul>
+<li><a href="http://www.blogmuseupicassobcn.org/2011/06/what-do-the-museu-picasso-europeana-and-cultural-hackers-have-in-common/?lang=en">blog post at Museu Picasso</a></li>
+<li><a href="http://tecnologia.elpais.com/tecnologia/2011/06/09/actualidad/1307610066_850215.html">Coverage at "El País" (in spanish)</a></li>
+<li><a href="http://europa.eu/rapid/press-release_IP-11-723_en.htm?locale=FR">Press release at Europa.eu</a></li>
+<li><a href="http://www.blogmuseupicassobcn.org/2011/06/after-the-digital-agenda-assembly-in-brussels/?lang=en">blog post about presentation of Timebook at European Digital Assembly Agenda</a></li>
+<li><a href="http://prezi.com/z6lxt3uf9l5y/timebook-museumnext-2012/?utm_source=prezi-view&amp;utm_medium=ending-screen&amp;utm_campaign=ending-screen&amp;utm_content=Title_link">presentation at Museum Next</a></li>
+</ul>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/un-global-voices.html">UN Global Voices</a> 
+ &ndash; <small>
+      united nations,       global voices,       visualization      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+    <p><img src="images/visualizations-2011-global-voices.png" width="600" /></p>
+<p>I participated on a visualization contest about United Nations data from the Voices of the Vulnerable program. The visualization tries to resume more than 500 answers in natural language to questions about how the people feel about their current economic situations and their future. Our work did not win but it received <a href="http://www.unglobalpulse.org/blog/%E2%80%9Cvisualize-voices-vulnerable%E2%80%9D-design-challenge-winners">good feedback</a>. Joint work with <a href="http://www.ruthygarcia.com/">Ruth Garcia Gavilanes</a> from Yahoo/UPF.</p></p>
+<blockquote>The Visualization submitted by Eduardo Graells Garrido raises the critical question of the complexity of classifying natural language with grammar errors and ambiguity. It shows a very interesting graph representation that classifies the topics related to changes in the last year (Q3).</blockquote>
+
+<p>See the visualization <a href="http://dcc.uchile.cl/~egraells/un_visualization/">here</a>. It has been features on the <a href="http://blogs.lse.ac.uk/impactofsocialsciences/2013/10/02/social-media-data-public-policy-leavey/">Impact Blog of the London School of Economics and Political Science</a>. </p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/visualization-of-20n.html">Visualization of #20N</a> 
+ &ndash; <small>
+      elections,       twitter,       visualization      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+    <p><img src="images/visualizations-2011-20n-spain.png" width="600" /></p>
+<p>One of the first projects I did on the PhD. I implemented a real-time visualization that displayed how Twitter reacted to the on-going presidential elections in Spain in November 20th, 2011. It was one of my first experiments with <code>django + d3.js</code>.</p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/transantiago-corridor-speeds.html">Transantiago - Corridor Speeds</a> 
+ &ndash; <small>
+      maps,       public transport,       transantiago      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+    <p><img src="images/transantiago-2010-speeds.png" width="600" /></p>
+<p>I worked in the Department of Civil Engineering, Transport Division at University of Chile, under the supervision of <a href="http://www.cec.uchile.cl/~dicidet/marcela.html">Marcela Munizaga</a>. My main task was to develop tools to analyze corridor speeds in the <em>Transantiago</em> public transport system. Corridor speeds were estimated according to GPS information from all vehicles on the system.</p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/non-photorealistic-rendering-master-thesis.html">Non Photorealistic Rendering (Master Thesis)</a> 
+ &ndash; <small>
+      computer graphics,       rendering,       art,       c++      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+    <p>My Master's thesis was about a non photorealistic rendering technique called <em>hatching</em>. Hatching imitates hand-drawn lines to shade objects. In the thesis, I developed an algorithm to hatch animated objects, as previous approaches focus on static ones. 
+The implementation is made on C++. It is based on the <a href="http://gfx.cs.princeton.edu/proj/lapped_tex/">Real Time Hatching</a> algorithm, which in turn uses the <a href="http://gfx.cs.princeton.edu/proj/lapped_tex/">Lapped Textures</a> algorithm.
+My advisor was <a href="http://users.dcc.uchile.cl/~mcrivara/indexen.html">María Cecilia Rivara</a>.</p>
+<p><img src="images/master-thesis-2008-donut.png" width="600" /></p>
+<p><img src="images/master-thesis-2008-anim-1.png" width="600" /></p>
+<p><img src="images/master-thesis-2008-tool-1.png" width="600" /></p>
+<p><img src="images/master-thesis-2008-tool-2.png" width="600" /></p>
+<p><img src="images/master-thesis-2008-atst.jpg" width="600" /></p>
+<p><img src="images/master-thesis-2008-samus.jpg" width="600" /></p>
+<p>Resources: </p>
+<ul>
+<li><a href="http://www.tesis.uchile.cl/tesis/uchile/2010/cf-graells_eg/html/index.html">Thesis</a> (in spanish). </li>
+<li><a href="https://github.com/carnby/Zahir">Zahir framework at github</a>, including the implementation of Lapped Textures.</li>
+</ul>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/chileclic-search-engine-for-the-chilean-government.html">Chileclic - Search Engine for the Chilean Government</a> 
+ &ndash; <small>
+      search,       government      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+    <p><img src="images/ciw-2009-chileclic.png" width="600" /></p>
+<p>Chileclic was a search engine from the government developed at <a href="http://www.ciw.cl">Center for Web Research </a>. I designed and implemented the search user interface, which needed to be embedded into the original design of the site. The development included a back-end dashboard of query analytics.</p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/zahir-rendering-framework.html">Zahir: Rendering Framework</a> 
+ &ndash; <small>
+      computer graphics,       framework,       rendering,       engineering,       c++      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+    <p>To become an <em>engineer in computer science</em> I designed and developed a framework for computer graphics, focused on implementation of shading algorithms, in particular non photorealistic techniques.
+The framework is called <em>Zahir</em> and it was implemented in C++. My advisor was <a href="http://users.dcc.uchile.cl/~mcrivara/indexen.html">María Cecilia Rivara</a>.</p>
+<p><img src="images/memoria-2007-shading-marvin.png" width="600" /></p>
+<p><img src="images/memoria-2007-shading-utah.png" width="600" /></p>
+<p><img src="images/memoria-2007-shading-rabbit.png" width="600" /></p>
+<p><img src="images/memoria-2007-shading-tiger.png" width="600" /></p>
+<p>Resources:</p>
+<ul>
+<li><a href="http://www.tesis.uchile.cl/tesis/uchile/2008/graells_eg/sources/graells_eg.pdf">Engineering Thesis</a> (in spanish)</li>
+<li><a href="http://arxiv.org/abs/1309.1917">Zahir: a Object-Oriented Framework for Computer Graphics</a> Technical Report that summarizes the thesis.</li>
+</ul>
+  </div>
+</article>
 
     <footer>
-<div id="paginator">
-<a href="http://carnby.github.io/author/egraells2.html" class="button_accent">&larr; Older Posts</a>
-
-</div>
     </footer>
 
     <div id="ending_message">
