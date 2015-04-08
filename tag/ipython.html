@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,8 @@ Tag: IPython  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/matta.html">matta</a> 
@@ -66,17 +71,25 @@ Tag: IPython  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p><code>matta</code> is my free (as in speech) library to be used within the IPython notebook. The idea is to have a bridge between typical data structures in Python (like networkx's graph and pandas DataFrames) to be visualized directly into the notebook using <code>d3.js</code>. </p>
-<p>You can see some basic examples in this <a href="http://nbviewer.ipython.org/github/carnby/matta/blob/master/matta/notebooks/examples.ipynb">IPython notebook</a>.
-But you can also build cooler stuff like this map of Santiago (playing with the <a href="http://transantiago.cl/dtpm/index.php/matrices-de-viaje">public transport system Transantiago Origin/Destiny matrix</a>):</p>
-<p><img src="images/visualizations-2014-matta-graph-map.png" width="600" /></p>
-<p>Or this one (playing with Magic: The Gathering tournament results, an on-going project with <a href="http://twitter.com/aastroza">Alonso Astroza</a>):</p>
-<p><img src="images/visualizations-2014-matta-mtg.png" width="600" /></p>
-<p>All of this using only code within the IPython notebook! You can see the code at <a href="http://github.com/carnby/matta">github</a>.</p>
+        <a href="http://carnby.github.io/matta.html"><p><img src="images/visualizations-2014-matta-graph-map.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">

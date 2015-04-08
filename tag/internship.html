@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,8 @@ Tag: internship  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/faceted-exploration.html">Faceted Exploration</a> 
@@ -66,13 +71,25 @@ Tag: internship  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p><img src="images/visualizations-2012-identified.png" width="600" /></p>
-<p>In the summer of 2012 (in the northern hemisphere), we moved (my wife and me) from Barcelona to San Francisco to do an internship at Identified. Identified was a startup about gamification of job-seeking social networks, plus candidate sourcing for recruiters (it was acquired by Workday). I fully designed and implemented a search engine that used visualization widgets plus faceted search and filtering.
-My mentor through the internship was <a href="https://twitter.com/steelbot">James Fan</a>. Thanks for all your guidance, James!</p>
+        <a href="http://carnby.github.io/faceted-exploration.html"><p><img src="images/visualizations-2012-identified.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">

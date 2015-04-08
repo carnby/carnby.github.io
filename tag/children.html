@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,8 @@ Tag: children  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/eu-hackathons.html">EU Hackathons</a> 
@@ -66,22 +71,25 @@ Tag: children  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p>I have participated in all editions of the <a href="http://euhackathon.eu">EU Hackathon</a>, a series of events organized by the European Parliament and Google in Brussels. In the last two editions, I teamed up with my two great friends <a href="http://grupoweb.upf.edu/~luca.chiarandini/">Luca Chiarandini</a> and <a href="https://upf.academia.edu/DiegoSaezTrumper">Diego Sáez-Trumper</a>. We were "Team Bodoques".</p>
-<h4>2013 Edition (Data Sovereignty Project)</h4>
-<p><img src="images/visualizations-2013-data-sovereignity.png" width="600" /></p>
-<p>We developed a metric named <em>data sovereigny</em> as the quality of having independent authority over citizens' information. In the <a href="http://www.visualizing.org/visualizations/data-sovereignty">visualization</a> we can observe how user data flows across important and popular websites, which are geolocated to the countries their servers lie in. We highlight those sites that track users through a <em>tracking score</em>.</p>
-<h4>2012 Edition (Eye Time Project)</h4>
-<iframe src="http://prezi.com/embed/ezhjfp7nidez/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined&amp;html5=1" width="600" height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
-
-<p>Our project was a Chrome browser extension (plus server side logic and processing) that allowed children to monitor their Web usage. In particular, Web usage of learning websites allowed children to spend more time online. Parents were able to understand the Web browsing habits of their kids. We <a href="http://2012.euhackathon.eu/team-bodoques-3-spainitaly-filtering-analytics-of-children-behaviours/">won the <em>Children Safety Track</em></a>.</p>
-<h4>2011 Edition (Ananke Project)</h4>
-<p><img src="images/visualizations-2011-ananke.png" width="600" /></p>
-<p><em>Solo participation</em>. In this edition, I explored the differences in geographical distribution of variables related to internet quality in Europe, along features extracted from The World Bank. Here is feedback written about the visualization (<a href="http://citizenlab.org/2011/11/citizen-lab-at-the-eu-hackathon/">source</a>):</p>
-<blockquote>Eduardo has an obvious awareness of data visualization fundamentals and best practices, and for the hackathon he developed a working prototype as well as two mockups of interactive visualizations meant to support data exploration and decision making. Like Team Ferioli’s entry the prototype incorporates economic indicators, displaying World Bank statistics alongside M-Lab data. The difference (aside from data source) is how comparisons are made. Instead of placing a bubble over each country on a single map, two map views are displayed in parallel, a user-selectable variable displayed on each. The different approaches have different strengths. The single map with bubbles makes discrepancies such as those described above stand out and be found more quickly, and doesn't require moving your eyes back and forth between maps. On the other hand, I find it easier to spot geographic trends within individual variables with Eduardo's approach, without the bubbles disrupting the visual flow. Also, props to Eduardo for choosing a colorblind-friendly colour palette. I don't know whether it was a conscious decision but it is an important consideration, often overlooked by visualization developers.</blockquote>
+        <a href="http://carnby.github.io/eu-hackathons.html"><p><img src="images/visualizations-2011-ananke.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">

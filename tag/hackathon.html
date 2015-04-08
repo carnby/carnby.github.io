@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,23 @@ Tag: hackathon  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/2s-dos-santiagos.html">2|S: Dos Santiagos</a> 
+ &ndash; <small>
+      santiago,       transantiago,       transport,       maps,       visualization,       flow,       hackathon,       data analysis      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+        <a href="http://carnby.github.io/2s-dos-santiagos.html"><p><img src="images/2014-stgo-flow.png" width="100%" /></p></a>
+  </div>
+
+  <hr />
+</article>
+</div>
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/eu-hackathons.html">EU Hackathons</a> 
@@ -66,21 +86,13 @@ Tag: hackathon  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p>I have participated in all editions of the <a href="http://euhackathon.eu">EU Hackathon</a>, a series of events organized by the European Parliament and Google in Brussels. In the last two editions, I teamed up with my two great friends <a href="http://grupoweb.upf.edu/~luca.chiarandini/">Luca Chiarandini</a> and <a href="https://upf.academia.edu/DiegoSaezTrumper">Diego Sáez-Trumper</a>. We were "Team Bodoques".</p>
-<h4>2013 Edition (Data Sovereignty Project)</h4>
-<p><img src="images/visualizations-2013-data-sovereignity.png" width="600" /></p>
-<p>We developed a metric named <em>data sovereigny</em> as the quality of having independent authority over citizens' information. In the <a href="http://www.visualizing.org/visualizations/data-sovereignty">visualization</a> we can observe how user data flows across important and popular websites, which are geolocated to the countries their servers lie in. We highlight those sites that track users through a <em>tracking score</em>.</p>
-<h4>2012 Edition (Eye Time Project)</h4>
-<iframe src="http://prezi.com/embed/ezhjfp7nidez/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined&amp;html5=1" width="600" height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
-
-<p>Our project was a Chrome browser extension (plus server side logic and processing) that allowed children to monitor their Web usage. In particular, Web usage of learning websites allowed children to spend more time online. Parents were able to understand the Web browsing habits of their kids. We <a href="http://2012.euhackathon.eu/team-bodoques-3-spainitaly-filtering-analytics-of-children-behaviours/">won the <em>Children Safety Track</em></a>.</p>
-<h4>2011 Edition (Ananke Project)</h4>
-<p><img src="images/visualizations-2011-ananke.png" width="600" /></p>
-<p><em>Solo participation</em>. In this edition, I explored the differences in geographical distribution of variables related to internet quality in Europe, along features extracted from The World Bank. Here is feedback written about the visualization (<a href="http://citizenlab.org/2011/11/citizen-lab-at-the-eu-hackathon/">source</a>):</p>
-<blockquote>Eduardo has an obvious awareness of data visualization fundamentals and best practices, and for the hackathon he developed a working prototype as well as two mockups of interactive visualizations meant to support data exploration and decision making. Like Team Ferioli’s entry the prototype incorporates economic indicators, displaying World Bank statistics alongside M-Lab data. The difference (aside from data source) is how comparisons are made. Instead of placing a bubble over each country on a single map, two map views are displayed in parallel, a user-selectable variable displayed on each. The different approaches have different strengths. The single map with bubbles makes discrepancies such as those described above stand out and be found more quickly, and doesn't require moving your eyes back and forth between maps. On the other hand, I find it easier to spot geographic trends within individual variables with Eduardo's approach, without the bubbles disrupting the visual flow. Also, props to Eduardo for choosing a colorblind-friendly colour palette. I don't know whether it was a conscious decision but it is an important consideration, often overlooked by visualization developers.</blockquote>
+        <a href="http://carnby.github.io/eu-hackathons.html"><p><img src="images/visualizations-2011-ananke.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
-<hr />
+</div>
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/timebook.html">Timebook</a> 
@@ -89,28 +101,25 @@ Tag: hackathon  </title>
     </h3>
   </div>
   <div class="article_text">
-    <iframe src="http://player.vimeo.com/video/50050002?color=ff9933" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<p><img src="images/hackathon-2011-timebook.png" width=600 /></p>
-<p>Joint work with <a href="http://grupoweb.upf.edu/~luca.chiarandini/">Luca Chiarandini</a>.</p>
-<p><em>Timebook</em> is a social network of historical figures built from Linked Open Data found on DBPedia, Europeana and WikiQuote. The main question we want to answer is: <em>what if social media existed before? can it be used to explore, learn and understand art movements and collections?</em> </p>
-<p>We made use of Linked Open Data in Wikipedia/DBPedia and Europeana, plus other data sources like Wikiquote, to build profiles of artists. Artists belonged to several “groups” built from the Wikipedia categories, followed or were followed by other artists and friends according to the Wikipedia links, had “wall posts” extracted from Wikiquote and “photos” extracted from Europeana. Timebook was built as a django application. We created custom python scripts to load data from DBPedia, Europeana and Wikiquote.</p>
-<p>In Timebook’s 2012 version we removed Europeana support because their data was hard to match with Wikipedia data, and we wanted to have an online version of our site (which we did for the conference). At the conference, many people from the arts and museums scene contacted us to talk about the project. It was the first time I realized we had the tools to create impact in others who were not expert coders nor computer scientists. </p>
-<p>We were <strong>Winners of the Social Inclusion category and Developers Award</strong> at <em><a href="http://pro.europeana.eu/hack4europe-spain-11">Europeana's Hack4Europe hackathon</a></em> in Barcelona. We also thank <a href="https://twitter.com/innova2">Conxa Rodà</a> for her support and encouragement to present our work at the <a href="https://www.flickr.com/photos/relaxintheair/7262241786/">Museum Next</a> conference (see video above).</p>
-<p>Resources:</p>
-<ul>
-<li>Code available at <a href="https://github.com/carnby/timebook">github</a></li>
-<li><a href="http://www.blogmuseupicassobcn.org/2011/06/what-do-the-museu-picasso-europeana-and-cultural-hackers-have-in-common/?lang=en">blog post at Museu Picasso</a></li>
-<li><a href="http://tecnologia.elpais.com/tecnologia/2011/06/09/actualidad/1307610066_850215.html">Coverage at "El País" (in spanish)</a></li>
-<li><a href="http://europa.eu/rapid/press-release_IP-11-723_en.htm?locale=FR">Press release at Europa.eu</a></li>
-<li><a href="http://www.blogmuseupicassobcn.org/2011/06/after-the-digital-agenda-assembly-in-brussels/?lang=en">blog post about presentation of Timebook at European Digital Assembly Agenda</a></li>
-<li><a href="http://prezi.com/z6lxt3uf9l5y/timebook-museumnext-2012/?utm_source=prezi-view&amp;utm_medium=ending-screen&amp;utm_campaign=ending-screen&amp;utm_content=Title_link">presentation at Museum Next</a></li>
-<li><a href="https://www.youtube.com/watch?v=GSyNSMmFBSI">interview on Linked Open Data at the Citilab Europeana Workshop</a> </li>
-</ul>
+        <a href="http://carnby.github.io/timebook.html"><p><img src="images/hackathon-2011-timebook.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">

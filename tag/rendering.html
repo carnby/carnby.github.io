@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,8 @@ Tag: rendering  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/non-photorealistic-rendering-master-thesis.html">Non Photorealistic Rendering (Master Thesis)</a> 
@@ -66,23 +71,28 @@ Tag: rendering  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p>My Master's thesis was about a non photorealistic rendering technique called <em>hatching</em>. Hatching imitates hand-drawn lines to shade objects. In the thesis, I developed an algorithm to hatch animated objects, as previous approaches focus on static ones. 
-The implementation is made on C++. It is based on the <a href="http://gfx.cs.princeton.edu/proj/lapped_tex/">Real Time Hatching</a> algorithm, which in turn uses the <a href="http://gfx.cs.princeton.edu/proj/lapped_tex/">Lapped Textures</a> algorithm.
-My advisor was <a href="http://users.dcc.uchile.cl/~mcrivara/indexen.html">María Cecilia Rivara</a>.</p>
-<p><img src="images/master-thesis-2008-donut.png" width="600" /></p>
-<p><img src="images/master-thesis-2008-anim-1.png" width="600" /></p>
-<p><img src="images/master-thesis-2008-tool-1.png" width="600" /></p>
-<p><img src="images/master-thesis-2008-tool-2.png" width="600" /></p>
-<p><img src="images/master-thesis-2008-atst.jpg" width="600" /></p>
-<p><img src="images/master-thesis-2008-samus.jpg" width="600" /></p>
-<p>Resources: </p>
-<ul>
-<li><a href="http://www.tesis.uchile.cl/tesis/uchile/2010/cf-graells_eg/html/index.html">Thesis</a> (in spanish). </li>
-<li><a href="https://github.com/carnby/Zahir">Zahir framework at github</a>, including the implementation of Lapped Textures.</li>
-</ul>
+        <a href="http://carnby.github.io/non-photorealistic-rendering-master-thesis.html"><p><img src="images/master-thesis-2008-samus.jpg" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
-<hr />
+</div>
+<div class="article">
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/open-pit-mines.html">Open Pit Mines</a> 
+ &ndash; <small>
+      computer graphics,       geometry,       rendering,       engineering,       c++      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+        <a href="http://carnby.github.io/open-pit-mines.html"><p><img src="images/2009-topo-cortada.png" width="100%" /></p></a>
+  </div>
+
+  <hr />
+</article>
+</div>
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/zahir-rendering-framework.html">Zahir: Rendering Framework</a> 
@@ -91,21 +101,25 @@ My advisor was <a href="http://users.dcc.uchile.cl/~mcrivara/indexen.html">Marí
     </h3>
   </div>
   <div class="article_text">
-    <p>To become an <em>engineer in computer science</em> I designed and developed a framework for computer graphics, focused on implementation of shading algorithms, in particular non photorealistic techniques.
-The framework is called <em>Zahir</em> and it was implemented in C++. My advisor was <a href="http://users.dcc.uchile.cl/~mcrivara/indexen.html">María Cecilia Rivara</a>.</p>
-<p><img src="images/memoria-2007-shading-marvin.png" width="600" /></p>
-<p><img src="images/memoria-2007-shading-utah.png" width="600" /></p>
-<p><img src="images/memoria-2007-shading-rabbit.png" width="600" /></p>
-<p><img src="images/memoria-2007-shading-tiger.png" width="600" /></p>
-<p>Resources:</p>
-<ul>
-<li><a href="http://www.tesis.uchile.cl/tesis/uchile/2008/graells_eg/sources/graells_eg.pdf">Engineering Thesis</a> (in spanish)</li>
-<li><a href="http://arxiv.org/abs/1309.1917">Zahir: a Object-Oriented Framework for Computer Graphics</a> Technical Report that summarizes the thesis.</li>
-</ul>
+        <a href="http://carnby.github.io/zahir-rendering-framework.html"><p><img src="images/memoria-2007-shading-marvin.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">

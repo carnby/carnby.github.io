@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,8 @@ Tag: equality  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/gender-equality-index.html">Gender Equality Index</a> 
@@ -66,14 +71,25 @@ Tag: equality  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p><img src="images/visualizations-2012-gender-equality.png" width="600" /></p>
-<p>Motivated by the <a href="https://en.wikipedia.org/wiki/International_Women%27s_Day">International Working Women's Day</a>, I wanted to explore the <a href="http://www.socialwatch.org/node/14367">Gender Equity Index dataset released by SocialWatch</a> with their indicators of Gender Quality Index. In particular I wanted to find out how is my own country, Chile, in terms of equality in comparison with other countries.</p>
-<p>This was a experiment to learn how to work with maps in <code>d3.js</code>. See the visualization <a href="http://dcc.uchile.cl/~egraells/gender_equality/">here</a>.</p>
-<p>Everyone should have the same access to the same opportunities. Hopefully, one day these maps will have only one color.</p>
+        <a href="http://carnby.github.io/gender-equality-index.html"><p><img src="images/visualizations-2012-gender-equality.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">

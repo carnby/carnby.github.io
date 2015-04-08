@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,8 @@ Tag: united nations  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/un-global-voices.html">UN Global Voices</a> 
@@ -66,15 +71,25 @@ Tag: united nations  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p><img src="images/visualizations-2011-global-voices.png" width="600" /></p>
-<p>I participated on a visualization contest about United Nations data from the Voices of the Vulnerable program. The visualization tries to resume more than 500 answers in natural language to questions about how the people feel about their current economic situations and their future. Our work did not win but it received <a href="http://www.unglobalpulse.org/blog/%E2%80%9Cvisualize-voices-vulnerable%E2%80%9D-design-challenge-winners">good feedback</a>. Joint work with <a href="http://www.ruthygarcia.com/">Ruth Garcia Gavilanes</a> from Yahoo/UPF.</p></p>
-<blockquote>The Visualization submitted by Eduardo Graells Garrido raises the critical question of the complexity of classifying natural language with grammar errors and ambiguity. It shows a very interesting graph representation that classifies the topics related to changes in the last year (Q3).</blockquote>
-
-<p>See the visualization <a href="http://dcc.uchile.cl/~egraells/un_visualization/">here</a>. It has been featured on the <a href="http://blogs.lse.ac.uk/impactofsocialsciences/2013/10/02/social-media-data-public-policy-leavey/">Impact Blog of the London School of Economics and Political Science</a>. </p>
+        <a href="http://carnby.github.io/un-global-voices.html"><p><img src="images/visualizations-2011-global-voices.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">

@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,8 @@ Tag: filter bubble  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/data-portraits.html">Data Portraits</a> 
@@ -66,31 +71,25 @@ Tag: filter bubble  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p>This is the second key project of my doctoral thesis. It's a joint work with my co-advisor <a href="http://www.dcs.gla.ac.uk/~mounia/">Mounia Lalmas</a> and <a href="http://researchswinger.org/">Daniele Quercia</a>. Likewise the Virtual Ornithology project, it's about user behavior in Twitter. In particular, we want to find out <em>how to connect people with opposing views in controversial and sensitive issues</em> by using <em>playful information visualizations</em> like this one:</p>
-<p><img src="images/visualizations-2013-data-portraits.png" width="600" /></p>
-<p>There are two behavioral bias related to this research project: <em><a href="https://en.wikipedia.org/wiki/Homophily">homophily</a></em> and <em><a href="https://en.wikipedia.org/wiki/Selective_exposure_theory">selective exposure</a></em>. Homophily refers to connecting and having relationships with people similar to us, while selective exposure is the act of preferring to read information that reafirms our beliefs, and discarding information that do not. Previous work has intented to solve this problem by, for instance, recommending people that is dissimilar (i.e., they have opposing views), or by displaying challenging information to user's beliefs. It hasn't worked because users do not value diversity.</p>
-<p>Our hypothesis is that this problem can be solved if, in addition to algorithms that perform people and content recommendation, we focus on <em>how to display those algorithm outcomes</em>. In particular, we propose that <em>playful information visualization techniques</em> will allow us to avoid the <a href="https://en.wikipedia.org/wiki/Cognitive_dissonance">cognitive dissonance</a> of confronting challenging information. As algorithm we consider a new algorithm that will recommend people that has opposing views in sensitive issues, but that is similar in non-sensitive issues (for instance, people who thinks differently on abortion but that likes the same movies).</p>
-<p>As a case study, we analyzed Twitter users from Chile in the context of the <em>abortion</em> issue (recall that there are two prominent stances: <em>#prochoice</em> and <em>#prolife</em>). First, we tested our idea that intermediary topics, those that are able to connect people with different viewpoints in abortion. It turns out that, indeed, they exist! We detected them by using <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">topic modelling</a> techniques. We presented these results at the <a href="http://scholar.google.es/citations?view_op=view_citation&amp;hl=en&amp;user=ltsTTI4AAAAJ&amp;citation_for_view=ltsTTI4AAAAJ:u9iWguZQMMsC">2014 International World Wide Web Conference held in Seoul</a>. The image below shows "intermediary topics", those in the top-right quarter. Each dot is a latent topic according to topic modeling. We display a relevant hashtag for some of those topics.</p>
-<p><img src="images/visualizations-2014-intermediary-topics.png" width="600" /></p>
-<p>As you can see, some intermediary topics are about things you can talk with anyone! For instance, <code>#walkingdead</code> and <code>#petshopboys</code> (they were on tour in Chile when we crawled data). We use those topics to find people to recommend. How do we display recommendations? For instance, in the visualization above, each dot is a tweet with a recommendation, like this one:</p>
-<div style="text-align: center;">
-    <img src="images/visualizations-2014-portrait-tweet.png"/>
+        <a href="http://carnby.github.io/data-portraits.html"><p><img src="images/visualizations-2013-data-portraits.png" width="100%" /></p></a>
+  </div>
+
+  <hr />
+</article>
+</div>
 </div>
 
-<p>We have evaluated our visualization in a pilot study with promising results. Results are reported in this <a href="http://arxiv.org/abs/1311.4658">pre-print</a> and covered by:</p>
-<ul>
-<li><a href="http://www.technologyreview.com/view/522111/how-to-burst-the-filter-bubble-that-protects-us-from-opposing-views/">MIT Technology Review</a></li>
-<li><a href="http://radar.oreilly.com/2013/12/four-short-links-3-december-2013.html">O'Reilly Radar</a> </li>
-<li><a href="http://beta.slashdot.org/story/195089">slashdot</a></li>
-<li><a href="http://www.smithsonianmag.com/innovation/have-scientists-found-a-way-to-pop-the-filter-bubble-180948265/?no-ist">Smithsonian</a></li>
-<li><a href="http://www.wired.it/internet/regole/2013/12/13/come-usare-twitter-per-facilitare-il-confronto-tra-opposte-vedute-rete/">WIRED.it</a> (in italian)</li>
-<li><a href="http://www.ticbeat.com/socialmedia/somos-capaces-de-tolerar-opiniones-contrarias-la-nuestra-en-la-red-para-navidad/">TIC Beat Interview</a> (in spanish)</li>
-</ul>
-<p>Currently we are working on a more complete and longitudinal user study, with an improved visualization design. Stay tuned!</p>
-  </div>
-</article>
-
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">

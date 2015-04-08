@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,23 @@ Tag: transantiago  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/2s-dos-santiagos.html">2|S: Dos Santiagos</a> 
+ &ndash; <small>
+      santiago,       transantiago,       transport,       maps,       visualization,       flow,       hackathon,       data analysis      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+        <a href="http://carnby.github.io/2s-dos-santiagos.html"><p><img src="images/2014-stgo-flow.png" width="100%" /></p></a>
+  </div>
+
+  <hr />
+</article>
+</div>
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/transantiago-corridor-speeds.html">Transantiago - Corridor Speeds</a> 
@@ -66,12 +86,25 @@ Tag: transantiago  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p><img src="images/transantiago-2010-speeds.png" width="600" /></p>
-<p>I worked in the Department of Civil Engineering, Transport Division at University of Chile, under the supervision of <a href="http://www.cec.uchile.cl/~dicidet/marcela.html">Marcela Munizaga</a>. My main task was to develop tools to analyze corridor speeds in the <em>Transantiago</em> public transport system. Corridor speeds were estimated according to GPS information from all vehicles on the system.</p>
+        <a href="http://carnby.github.io/transantiago-corridor-speeds.html"><p><img src="images/transantiago-2010-speeds.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">

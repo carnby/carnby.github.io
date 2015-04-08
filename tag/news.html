@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,8 @@ Tag: news  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/2013-italian-elections-in-yahoo-news.html">2013 Italian Elections in Yahoo News</a> 
@@ -66,21 +71,25 @@ Tag: news  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p>In 2013, within the <em>Social Media Engagement Research Group</em> in <a href="http://labs.yahoo.com/location/barcelona/">Yahoo Labs Barcelona</a> (group led by <a href="http://alexjaimes.com/">Alejandro Jaimes</a>) we developed two visualizations to analyze and explore the presidential elections in Italy. </p>
-<h4>Social Media Support</h4>
-<p><img src="images/visualizations-2013-italian-elections-map.jpg" width="600" /></p>
-<p>Each  map is colored according to the <em>social media support index</em> of each party. This index was estimated from the amount of Facebook likes and Twitter retweets supporting the different political parties. You can see that different regions had different support levels. In the overview map, each region is colored according to the <em>most</em> supported party, but you can see the whole party support by clicking on the top buttons.</p>
-<h4>Visualization featured in Yahoo News</h4>
-<p><img src="images/visualizations-2013-italian-elections-metrics.png" width="600" /></p>
-<p>We performed data mining on Twitter to analyze how each candidate's tweets were related to several issues like education, health care, and so on. Then, we compared how each candidate gave importance to each issue in comparison to the other candidates.</p>
-<h4>Bonus Track: Playing with color scales in maps</h4>
-<p><img src="images/visualizations-2013-italian-elections-minimaps.png" width="600" />
-<img src="images/visualizations-2013-italian-elections-minimaps-scales.png" width="600" /></p>
-<p>With this project I started to like maps a lot, specially in <em>small multiples contexts</em>. Although the menu in the map visualization uses colored buttons, originally we wanted to have these small multiples. But sometimes cross-browser technology (remember that a big share of Web surfers still use Internet Explorer) won't allow you to do what you want.</p>
+        <a href="http://carnby.github.io/2013-italian-elections-in-yahoo-news.html"><p><img src="images/visualizations-2013-italian-elections-metrics.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">

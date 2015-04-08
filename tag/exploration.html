@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="http://carnby.github.io/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
 
+  <script src="http://carnby.github.io/theme/js/masonry.pkgd.min.js"></script>
+  <script src="http://carnby.github.io/theme/js/imagesloaded.pkgd.min.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Eduardo Graells-Garrido">
@@ -58,6 +61,8 @@ Tag: exploration  </title>
 </p>
     </header>
 
+<div id="articles">
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/sentiment-visualization-widgets.html">Sentiment Visualization Widgets</a> 
@@ -66,22 +71,13 @@ Tag: exploration  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p>After working on search engines previously, and the experience of Timebook, we started to explore the design space of visualizations in the context of exploration of historical figures. In particular, we focused on how history has judged historical figures, through the usage of sentiment analysis over Wikipedia biographies.</p>
-<h4>Visualizing Sentiment through History</h4>
-<p><img src="images/visualizations-2013-sentiment-history.png" width="600" /></p>
-<h4>Visualizing Negative and Positive Ontologies in DBPedia</h4>
-<p><img src="images/visualizations-2013-sentiment-treemap.png" width="600" /></p>
-<h4>Which widget is better to foster visual exploration?</h4>
-<p><img src="images/visualizations-2013-sentiment-search.png" width="600" /></p>
-<p><img src="images/visualizations-2013-sentiment-search-2.png" width="600" /></p>
-<p>Results of these experiments will be presented (jointly with my advisors <a href="http://baeza.cl/">Ricardo Baeza-Yates</a> and <a href="http://www.dcs.gla.ac.uk/~mounia/">Mounia Lalmas</a> at the <a href="http://columbus.exp.sis.pitt.edu/sp2014/">1st Social Personalization Workshop</a> to be held at the <a href="http://ht.acm.org/ht2014">Hypertext 2014</a> conference in Santiago, Chile.</p>
-<p>Resources:</p>
-<ul>
-<li><a href="http://ceur-ws.org/Vol-1210/SP2014_03.pdf">Sentiment Visualisation Widgets for Exploratory Search</a> paper at the <a href="http://ceur-ws.org/Vol-1210/">Hypertext 2014 Extended Proceedings</a>.</li>
-</ul>
+        <a href="http://carnby.github.io/sentiment-visualization-widgets.html"><p><img src="images/visualizations-2013-sentiment-history.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
-<hr />
+</div>
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/faceted-exploration.html">Faceted Exploration</a> 
@@ -90,12 +86,13 @@ Tag: exploration  </title>
     </h3>
   </div>
   <div class="article_text">
-    <p><img src="images/visualizations-2012-identified.png" width="600" /></p>
-<p>In the summer of 2012 (in the northern hemisphere), we moved (my wife and me) from Barcelona to San Francisco to do an internship at Identified. Identified was a startup about gamification of job-seeking social networks, plus candidate sourcing for recruiters (it was acquired by Workday). I fully designed and implemented a search engine that used visualization widgets plus faceted search and filtering.
-My mentor through the internship was <a href="https://twitter.com/steelbot">James Fan</a>. Thanks for all your guidance, James!</p>
+        <a href="http://carnby.github.io/faceted-exploration.html"><p><img src="images/visualizations-2012-identified.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
-<hr />
+</div>
+<div class="article">
 <article>
   <div class="article_title">
     <h3><a href="http://carnby.github.io/linspiration.html">Linspiration</a> 
@@ -104,13 +101,25 @@ My mentor through the internship was <a href="https://twitter.com/steelbot">Jame
     </h3>
   </div>
   <div class="article_text">
-    <p><img src="images/visualizations-2012-linspiration.png" width="600" /></p>
-<p><em>Linspiration</em> is a visualization technique implemented in <code>d3.js</code> to explore and compare time-series in a fun way. This was one of the first explorations in my PhD into designing <em>new</em> visualizations. It all started in the brainstorming sessions with <a href="http://alexjaimes.com/">Alejandro Jaimes</a>, <a href="http://grupoweb.upf.edu/~luca.chiarandini/">Luca Chiarandini</a>, <a href="http://panchotolchinsky.com/">Pancho Tolchinsky</a> and <a href="http://meekalbajaj.com/">Meekal Bajaj</a>. I have learned so much from them!</p>
-<p>Presented jointly with <a href="http://alexjaimes.com/">Alejandro Jaimes</a> at the <a href="http://dl.acm.org/citation.cfm?id=2166966&amp;picked=prox">2012 Intelligent User Interfaces</a> conference in Lisbon, Portugal.</p>
+        <a href="http://carnby.github.io/linspiration.html"><p><img src="images/visualizations-2012-linspiration.png" width="100%" /></p></a>
   </div>
+
+  <hr />
 </article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">
