@@ -23,7 +23,7 @@
 
 
   <title>
-@carnby - Authors  </title>
+Tag: network analysis  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -57,18 +57,39 @@
 
   <main>
     <header>
-      <p>
-      <a href="http://carnby.github.io">Index</a> &#124; <a href="http://carnby.github.io/archives.html">Archives</a>
-      &#124; <a href="http://carnby.github.io/feeds/all.atom.xml">Atom Feed</a>
-      </p>
+<p>Tag: network analysis
+</p>
     </header>
 
-    <h1>Authors on @carnby</h1>
+<div id="articles">
+<div class="article">
+<article>
+  <div class="article_title">
+    <h3><a href="http://carnby.github.io/first-women-second-sex-gender-bias-on-wikipedia.html">First Women, Second Sex: Gender Bias on Wikipedia</a> 
+ &ndash; <small>
+      data analysis,       wikipedia,       gender bias,       language analysis,       network analysis      </small>
+    </h3>
+  </div>
+  <div class="article_text">
+        <a href="http://carnby.github.io/first-women-second-sex-gender-bias-on-wikipedia.html"><p><img src="images/2015-second-sex.png" width="100%" /></p></a>
+  </div>
 
-    <ul>        <li><a href="http://carnby.github.io/author/egraells.html">egraells</a> (24)</li>
-    </ul>
+  <hr />
+</article>
+</div>
+</div>
 
     <footer>
+<script>
+var container = document.querySelector('#articles');
+imagesLoaded( container, function() {
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 300,
+      itemSelector: '.article'
+    });
+});
+</script>
     </footer>
 
     <div id="ending_message">
